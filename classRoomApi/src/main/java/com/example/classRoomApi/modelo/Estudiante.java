@@ -1,8 +1,9 @@
 package com.example.classRoomApi.modelo;
+@E
 import ayudas.Tipo_de_usurio;
 
 import java.time.LocalDate;
-public class Estudiante  extends usuario{
+public class Estudiante {
   private  Integer ID_Estudiante;
   private  Integer grado;
   private   LocalDate fecha;
@@ -11,13 +12,11 @@ public class Estudiante  extends usuario{
     public Estudiante() {
     }
 
-    public Estudiante(Integer id_usurairo, String nombre, String correo_eletronico, String contrazeña, String telefono, Tipo_de_usurio tipo_usuario) {
-        super(id_usurairo, nombre, correo_eletronico, contrazeña, telefono, tipo_usuario);
-    }
-
-    public Estudiante(Integer id_usurairo, String nombre, String correo_eletronico, String contrazeña, String telefono, Tipo_de_usurio tipo_usuario, Integer ID_Estudiante) {
-        super(id_usurairo, nombre, correo_eletronico, contrazeña, telefono, tipo_usuario);
+    public Estudiante(Integer grado, Integer ID_Estudiante, LocalDate fecha, String direccion) {
+        this.grado = grado;
         this.ID_Estudiante = ID_Estudiante;
+        this.fecha = fecha;
+        this.direccion = direccion;
     }
 
     public Integer getID_Estudiante() {

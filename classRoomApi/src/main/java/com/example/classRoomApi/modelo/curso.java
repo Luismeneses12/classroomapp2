@@ -1,21 +1,17 @@
 package com.example.classRoomApi.modelo;
 
+@Entity
+
+
 import ayudas.Tipo_de_usurio;
 
-public class curso  extends Docente {
+public class curso  {
     private  Integer ID_curso;
     private  String  Nombre ;
 
-    public curso(Integer ID_docente, String especialiadad, String Nombre, Integer ID_curso) {
-        super(ID_docente, especialiadad);
-        this.Nombre = Nombre;
+    public curso(Integer ID_curso, String nombre) {
         this.ID_curso = ID_curso;
-    }
-
-    public curso(Integer id_usurairo, String nombre, String correo_eletronico, String contrazena, String telefono, Tipo_de_usurio tipo_usuario, Integer ID_docente, String especialiadad, String nombre1, Integer ID_curso) {
-        super(id_usurairo, nombre, correo_eletronico, contrazena, telefono, tipo_usuario, ID_docente, especialiadad);
-        this.Nombre = nombre1;
-        this.ID_curso = ID_curso;
+        Nombre = nombre;
     }
 
     public Integer getID_curso() {

@@ -2,7 +2,7 @@ package com.example.classRoomApi.modelo;
 
 import ayudas.Tipo_de_usurio;
 
-public class Docente  extends usuario{
+public class Docente  {
     private  Integer ID_docente;
     private String especialiadad;
 
@@ -11,11 +11,7 @@ public class Docente  extends usuario{
         this.especialiadad = especialiadad;
     }
 
-    public Docente(Integer id_usurairo, String nombre, String correo_eletronico, String contrazena, String telefono, Tipo_de_usurio tipo_usuario, Integer ID_docente, String especialiadad) {
-        super(id_usurairo, nombre, correo_eletronico, contrazena, telefono, tipo_usuario);
-        this.ID_docente = ID_docente;
-        this.especialiadad = especialiadad;
-    }
+
 
     public String getEspecialiadad() {
         return especialiadad;

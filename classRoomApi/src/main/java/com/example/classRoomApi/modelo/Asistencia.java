@@ -1,4 +1,5 @@
-package com.example.classRoomApi.modelo;
+b
+        package com.example.classRoomApi.modelo;
 import java.time.LocalDate;
 import ayudas.estado;
 public class Asistencia {
